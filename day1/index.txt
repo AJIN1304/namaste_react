@@ -1,0 +1,107 @@
+q1)WHAT IS EMMET?
+
+ Emmet is a free add-on for your text editor that allows you to type shortcuts that are
+ then expanded into full pieces of code.  eg) shift(!) then enter gives boiler plate
+
+q2)Difference between a Library and a Framework?
+
+ libraries target a specific functionality eg)React
+ while a framework tries to provide everything required to develop a complete application.Eg)Bootstrap
+ react is a library because it can independently work as an small portion of our app...it is not framework.
+ libraries target a specific functionality, while a framework tries to provide everything required 
+ to develop a complete application
+
+q3)What is CDN and Why we Use it?
+
+ A content delivery network (CDN) is a network of interconnected servers that speeds up 
+ webpage loading for data-heavy applications. CDN can stand for content delivery network
+ or content distribution network. 
+ A CDN allows for the quick transfer of assets needed for loading Internet content,
+  including HTML pages, JavaScript files, stylesheets, images, and videos.
+  Improving website security.
+  Increasing content availability and redundancy.
+  Reducing bandwidth costs.
+  Improving website load times.
+
+q4)Why is React is known as React?
+
+  React is called "React" because of its core feature, which is its ability to "react" 
+  or respond dynamically to changes in data. React was originally created by Facebook in 2011
+   for use in their own web applications, and it was released as an open-source project in 2013.
+
+q5)What is cross-orgin  in the script tag?
+
+   The cross-origin attribute sets the mode of the request to an HTTP CORS Request.
+    Web pages often make requests to load resources on other servers. 
+    Here is where CORS comes in. A cross-origin request is a request for a resource
+     (e.g. style sheets, iframes, images, fonts, or scripts) from another domain.
+
+q6)What is the difference between React and ReactDOM?
+
+ 
+React: React is a javascript library, designed for building better user interfaces.
+
+React-DOM: React-DOM is a complimentary library to React which glues React to the browser DOM
+
+In a nutshell, Whenever we use component, classes, elements, etc We’re using React and whenever we use 
+methods like render() or findDOMNode() we’re using React-DOM.
+
+ The Document Object Model, or DOM, is a set of APIs that allow programmes and scripts to access 
+ and manipulate the document tree, the DOM sees a web page as a tree of nodes. With these APIs,
+ you can have access to the document tree (tree of nodes), and with that access, 
+ you can change or delete the content in that document.
+ The DOM tree (document tree) consists of a hierarchy of nodes that represent the structure 
+ of the document. Each node contains information about the element it represents and may contain
+ child nodes. The root node is the document object, which contains information about the 
+ entire document.
+
+ ReactDOM 
+ ReactDOM is used to render components and elements on the web.
+ It is a part of the React library used to create user interfaces and dynamic web applications, 
+ as well as reusable and composable components that can be used in different applications.
+ It is used to interact and manipulate the DOM structure,
+ including the elements and components that are rendered on the page. 
+ It’s also used to control the state of the components and elements on the page. 
+ ReactDOM also provides developers with access to the DOM APIs.
+
+q7)what is the difference between react.development file and react.production file in the cdn?
+
+ react.development.js - More developer friendly, readable, will take more size.
+
+ react.production.js - Minified code that is not developer friendly as it focused 
+ on decreasing in file size, code efficiency.
+
+q8)what are async and defer?
+
+Async
+Async is a script tag in JavaScript is a way to load scripts asynchronously.
+ That means, if a script is async, it will be loaded independently of other scripts 
+ on the page, and will not block the page from loading.
+                                                 <script async src="script.js"></script>
+advantages
+ When loading a large JavaScript file, using the async attribute can be beneficial.
+  It tells the browser that it can go ahead and continue parsing the HTML document 
+  while the JavaScript file is being downloaded. This can reduce the perceived load time 
+  of the page because the browser can start to render elements sooner.
+
+defer
+  By using the defer attribute in HTML, the browser will load the script only after parsing
+   (loading) the page. This can be helpful if you have a script that is dependent on other scripts,
+    or if you want to improve the loading time of your page by loading scripts after the initial
+     page load.
+     <script defer src="script.js"></script>
+
+     Deferred scripts are guaranteed to run after the page has been loaded and parsed, 
+     so they can’t slow down the initial page load.
+
+advantages
+Since deferred scripts are not parsed until after the page has loaded, they can’t
+block the parsing of other elements on the page (such as images).
+Deferred scripts can be updated independently of the rest of the page, 
+which means that if you change a deferred script, you don’t have to re-parse 
+and re-render the entire page.
+
+conclusion
+Async allows your script to run as soon as it’s loaded, without blocking other elements on the page.
+ Defer means your script will only execute after the page has finished loading. 
+ In most cases, async is the better option — but there are exceptions
